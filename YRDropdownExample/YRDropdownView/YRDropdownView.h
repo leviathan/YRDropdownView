@@ -15,9 +15,9 @@
     NSString *detailText;
     UILabel *titleLabel;
     UILabel *detailLabel;
-    UIImage *backgroundImage;
+    UIImage *__weak backgroundImage;
     UIImageView *backgroundImageView;
-    UIImage *accessoryImage;
+    UIImage *__weak accessoryImage;
     UIImageView *accessoryImageView;
     SEL onTouch;
     NSDate *showStarted;
@@ -26,9 +26,9 @@
 
 @property (copy) NSString *titleText;
 @property (copy) NSString *detailText;
-@property (assign) UIImage *accessoryImage;
+@property (weak) UIImage *accessoryImage;
 @property (assign) float minHeight;
-@property (nonatomic, assign) UIImage *backgroundImage;
+@property (nonatomic, weak) UIImage *backgroundImage;
 @property (nonatomic, assign) SEL onTouch;
 @property (assign) BOOL shouldAnimate;
 

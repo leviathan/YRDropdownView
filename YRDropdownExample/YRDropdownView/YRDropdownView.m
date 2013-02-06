@@ -223,7 +223,6 @@ static YRDropdownView *currentDropdown = nil;
     
     [currentDropdown removeFromSuperview];
     
-    [currentDropdown release];
     currentDropdown = nil;
 }
 
